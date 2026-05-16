@@ -51,7 +51,7 @@ const monthData = [
     { name: "September", message: "Lan & Amber" },
     { name: "October", message: "Shooter & Sethora" },
     { name: "November", message: "Whyme" },
-    { name: "December", message: "Storm" }
+    { name: "December", message: "Storm & CC" }
   ];
   
   function getRealMonth() {
