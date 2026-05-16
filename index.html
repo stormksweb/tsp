@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TsP Alliance - The Greatest Kingshot Alliance, welcome to 'The Small Puppies'." />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="TsP" />
+    <link rel="manifest" href="site.webmanifest" />
+    <title>TsP Alliance</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <link rel="stylesheet" href="style.css">
+    <link 
+  rel="preload" 
+  as="image" 
+  imagesrcset="
+  assets/images/hero/hero-bg-desktop.webp,
+  assets/images/hero/hero-bg-mobile.webp,
+  assets/images/ready/ready-bg-desktop.webp,
+  assets/images/ready/ready-bg-mobile.webp,
+  assets/main-cta.webp
+  "
+>
+
+
+</head>
+
+<body>
+
+    <audio id="song" preload="none" loop></audio>
+    
+        <picture class="hero-bg">
+            <source media="(min-width: 1001px)" srcset="assets/images/hero/hero-bg-desktop.webp">
+            <img src="assets/images/hero/hero-bg-mobile.webp"
+                alt="Image of the alliance mascot - a puppy wearing metal armor with red accents - standing proudly with a sword.">
+        </picture>
+
+    <header>
+        <nav class="nav">
+            <div class="nav-content">
+                <div class="nav-left">
+                    <div class="logo">
+                        <img src="assets/logo.webp" alt="Logo of TsP Alliance">
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <div class="nav-links">
+                        <div class="nav-link">
+                            <a href="#events">Events</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href="#about">About</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href="#join">Why Join</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href="#recruitment">Recruitment</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href="#gallery">Gallery</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href="#kingdom">Kingdom</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href="#leadership">Contact</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href="#members">Members</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="nav-cta cta-join-link" href="">
+                Join
+            </a>
+            <div class="nav-menu">
+                <button aria-label="Open menu" class="nav-menu-open" tabindex="0">
+                    <svg aria-label="Hambuger icon menu" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>
+                </button>
+                <button aria-label="Close menu" class="nav-menu-close" tabindex="0">
+                    <svg aria-label="X icon menu" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div class="nav-menu-mobile">
+            <div class="nav-link">
+                <a href="#events">Events</a>
+            </div>
+            <div class="nav-link">
+                <a href="#about">About</a>
+            </div>
+            <div class="nav-link">
+                <a href="#join">Why Join</a>
+            </div>
+            <div class="nav-link">
+                <a href="#recruitment">Recruitment</a>
+            </div>
+            <div class="nav-link">
+                <a href="#gallery">Gallery</a>
+            </div>
+            <div class="nav-link">
+                <a href="#kingdom">Kingdom</a>
+            </div>
+            <div class="nav-link">
+                <a href="#leadership">Contact</a>
+            </div>
+            <div class="nav-link">
+                <a href="#members">Members</a>
+            </div>
+            <div class="nav-mobile-puppy">
+                <img src="assets/mascot/puppy-sleeping.webp" alt="TsP puppy sleeping">
+            </div>
+            
+            <a class="nav-cta-mobile secondary-link cta-join-link" href="">
+                Join
+            </a>
+
+
+        </div>
+
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="hero-stat">
+                    <div class="hero-stat-profiles">
+                        <img src="assets/profiles.webp"
+                            alt="3 profile pictures of characters from Kingshot game set next to each other.">
+                    </div>
+                    <div class="hero-stat-text">90+ members dominating Kingshot</div>
+                </div>
+                <div class="hero-title">
+                    <h1>Welcome to TsP</h1>
+                </div>
+                <div class="hero-description">
+                    <p>We are <strong>The Small Puppies</strong>, a Kingshot alliance focused on teamwork, steady
+                        improvement, and having a good time together. We welcome players of all levels and backgrounds
+                        as long as they want to contribute and be part of the team.</p>
+                </div>
+                <div class="hero-actions">
+                    <a class="cta-join-link" href="">
+                        <img class="main-cta" src="assets/main-cta.webp"
+                            alt="Call to action designed to look medieval with a sword, shield, and helmet on the sides. Centered with the word 'Join'.">
+                    </a>
+                </div>
+            </div>
+            <div class="hero-vip">
+                <div class="hero-vip-label"><i class="ph-fill ph-crown"></i> VIP of the month</div>
+                <div id="hero-vip-name" class="hero-vip-name animated-vip-text">Lord Parzival & Queen Mourning</div>
+            </div>
+        </section>
+
+        <section id="events" class="events">
+            <picture class="events-bg">
+                <source media="(min-width: 1001px)" srcset="assets/images/events/bg.webp">
+                <img src="assets/images/events/bg-mobile.webp"
+                    alt="Image of a wall that has the emblem of the alliance repeated on it.">
+            </picture>
+            <div class="events-content">
+                <div class="events-title">
+                    <h2>Our Main Activities</h2>
+                </div>
+                <div class="events-list">
+                    <div class="events-item">
+                        <div class="event-item-icon">
+                            <img src="assets/icons/bear.webp" alt="Bear Hunt Icon from Kingshot">
+                        </div>
+                        <div class="event-item-details">
+                            <div class="event-item-name">Bear Hunt</div>
+                            <div class="event-item-detail">12:30UTC & 19:30UTC</div>
+                        </div>
+                    </div>
+                    <div class="events-item">
+                        <div class="event-item-icon">
+                            <img src="assets/icons/viking.webp" alt="Viking Icon from Kingshot">
+                        </div>
+                        <div class="event-item-details">
+                            <div class="event-item-name">Vikings</div>
+                        </div>
+                    </div>
+                    <div class="events-item">
+                        <div class="event-item-icon">
+                            <img src="assets/icons/swordland.webp" alt="Swordland Icon from Kingshot">
+                        </div>
+                        <div class="event-item-details">
+                            <div class="event-item-name">Swordland</div>
+                        </div>
+                    </div>
+                    <div class="events-item">
+                        <div class="event-item-icon">
+                            <img src="assets/icons/tri-alliance.webp" alt="Tri-Alliance Icon from Kingshot">
+                        </div>
+                        <div class="event-item-details">
+                            <div class="event-item-name">Tri-Alliance</div>
+                        </div>
+                    </div>
+                    <div class="events-item">
+                        <div class="event-item-icon">
+                            <img src="assets/icons/infantry.webp" alt="Infantry Icon from Kingshot">
+                        </div>
+                        <div class="event-item-details">
+                            <div class="event-item-name">And more...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="events-actions">
+                    <a class="cta-join-link" href="">
+                        <img class="main-cta" src="assets/main-cta.webp"
+                            alt="Call to action designed to look medieval with a sword, shield, and helmet on the sides. Centered with the word 'Join'.">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="philosophy">
+            <picture class="philosophy-bg">
+                <source media="(min-width: 1001px)" srcset="assets/images/philosophy/bg-desktop.webp">
+                <img src="assets/images/philosophy/bg-mobile.webp"
+                    alt="Image of the alliance mascot sitting on the desk with an open book, and putting their head on their first thinking.">
+            </picture>
+            <div class="philosophy-content">
+                <div class="philosophy-title">
+                    <h2>Our Philosophy</h2>
+                </div>
+                <div class="philosophy-description">
+                    <p>We are a close and supportive group. The goal is not just to grow stronger, but to help each
+                        other improve, learn new things, and enjoy the game together.
+                        <br><br>
+                        Consistency, teamwork, and a good atmosphere matter more to us than ego.
+                    </p>
+                </div>
+                <div class="philosophy-actions">
+                    <a class="cta-join-link" href="">
+                        <img class="main-cta" src="assets/main-cta.webp"
+                            alt="Call to action designed to look medieval with a sword, shield, and helmet on the sides. Centered with the word 'Join'.">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="join" class="join">
+            <img class="logo" src="assets/logo.webp" alt="Logo of TsP Alliance">
+            <img class="frame frame-tl" src="assets/frame-tl.webp"
+                alt="Image of a corner of a wooden frame with flowers wrapped around it.">
+            <img class="frame frame-tr" src="assets/frame-tr.webp"
+                alt="Image of a corner of a wooden frame with flowers wrapped around it.">
+            <img class="frame frame-bl" src="assets/frame-bl.webp"
+                alt="Image of a corner of a wooden frame with flowers wrapped around it.">
+            <img class="frame frame-br" src="assets/frame-br.webp"
+                alt="Image of a corner of a wooden frame with flowers wrapped around it.">
+            <div class="join-content">
+                <div class="join-left">
+                    <div class="join-welcome-box">
+                        <div class="join-welcome-box-mascot">
+                            <img src="assets/mascot/puppy-stars.webp" alt="TsP Puppy happy expression with small stars">
+                        </div>
+                        <div class="join-welcome-box-details">
+                            <div class="join-welcome-box-details-title">
+                                <h3>Who We Welcome</h3>
+                            </div>
+                            <div class="join-welcome-box-details-description">
+                                <p>Whales, free-to-play players, experienced fighters, and developing accounts are all
+                                    welcome. We value attitude and participation more than raw power.
+                                    <br><br>
+                                    All languages and backgrounds are welcome.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="join-welcome-box">
+                        <div class="join-welcome-box-mascot">
+                            <img src="assets/mascot/puppy-hand.webp" alt="TsP Puppy with hand gesturing to join">
+                        </div>
+                        <div class="join-welcome-box-details">
+                            <div class="join-welcome-box-details-title">
+                                <h3>What We’re Looking For</h3>
+                            </div>
+                            <div class="join-welcome-box-details-description">
+                                <p>Active players who enjoy the game, communicate, and want to be part of a real team.
+                                    <br><br>
+                                    You do not need to be the strongest player. Showing up and contributing matters
+                                    more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="join-right">
+                    <div class="why-join">
+                        <div class="why-join-title">
+                            <h3>Why Join TsP</h3>
+                        </div>
+                        <div class="why-join-details">
+                            <div class="why-join-item">
+                                <div class="why-join-item-title">
+                                    <div class="why-join-item-title-label"><i class="ph-fill ph-heart"></i> Supportive
+                                        team</div>
+                                </div>
+                                <div class="why-join-item-description">People help each other, share tips, and genuinely
+                                    want the whole alliance to improve.</div>
+                            </div>
+                            <div class="why-join-item">
+                                <div class="why-join-item-title">
+                                    <div class="why-join-item-title-label"><i class="ph-fill ph-smiley"></i> Active but
+                                        chill</div>
+                                </div>
+                                <div class="why-join-item-description">We take events seriously, but we keep the
+                                    atmosphere relaxed, friendly, and easy to be part of.</div>
+                            </div>
+                            <div class="why-join-item">
+                                <div class="why-join-item-title">
+                                    <div class="why-join-item-title-label"><i class="ph-fill ph-crown-simple"></i> Room
+                                        to grow</div>
+                                </div>
+                                <div class="why-join-item-description">Whether you are already strong or still
+                                    developing, consistency and attitude matter more than raw power.</div>
+                            </div>
+                        </div>
+                        <div class="why-join-actions">
+                            <a class="cta-join-link" href="">
+                                <img class="main-cta" src="assets/main-cta.webp"
+                                    alt="Call to action designed to look medieval with a sword, shield, and helmet on the sides. Centered with the word 'Join'.">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recruitment" class="recruitment">
+            <picture class="recruitment-bg">
+                <source media="(min-width: 1001px)" srcset="assets/images/recruitment/bg-desktop.webp">
+                <img src="assets/images/recruitment/bg-mobile.webp"
+                    alt="Image of a castle view with hills and red banners representing the TsP emblem.">
+            </picture>
+            <div class="recruitment-content">
+                <div class="recruitment-title">
+                    <h2>Recruitment</h2>
+                </div>
+                <div class="recruitment-list">
+                    <div class="recruitment-box">
+                        <div class="recruitment-box-title">Requirements</div>
+                        <div class="recruitment-box-description">
+                            <p>
+                                We are looking for active players who want to be part of a real team. Power matters less
+                                than consistency, communication, and willingness to join in.
+                            </p>
+                            <ul>
+                                <li>Join alliance events regularly</li>
+                                <li>Read daily notices and follow simple instructions</li>
+                                <li>Communicate if you are unsure about something</li>
+                                <li>Bring a good attitude and team spirit</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="recruitment-box">
+                        <div class="recruitment-box-title">Event Rules</div>
+                        <div class="recruitment-box-description">
+                            <p>
+                                We keep things clear. There is a daily notice so members know what matters that day,
+                                from event times to any special instructions.
+                            </p>
+                            <ul>
+                                <li>Show up for events when you can</li>
+                                <li>Follow rally and event instructions</li>
+                                <li>Ask if anything is unclear</li>
+                                <li>Team coordination comes first</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="recruitment-box">
+                        <div class="recruitment-box-title">TsP Lore</div>
+                        <div class="recruitment-box-description">
+                            <p>
+                                TsP runs on shenanigans 24/7. The alliance chat is full of side projects, jokes, wild
+                                ideas, and the kind of nonsense that somehow becomes a real plan.
+                                <br><br>
+                                Current examples include a sexy Kingshot avatar calendar, random alliance projects, and
+                                enough inside jokes that our town crier may need to brief you when you log in.
+                                <br><br>
+                                Even with all that, we stay organized. Fun and clear communication go together here.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recruitment-actions">
+                    <a class="cta-join-link" href="">
+                        <img class="main-cta" src="assets/main-cta.webp"
+                            alt="Call to action designed to look medieval with a sword, shield, and helmet on the sides. Centered with the word 'Join'.">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="gallery" class="gallery">
+            <picture class="gallery-bg">
+                <source media="(min-width: 1001px)" srcset="assets/images/gallery/bg.webp">
+                <img src="assets/images/gallery/bg-mobile.webp"
+                    alt="Image of a maroon wall using the TsP emblem all over.">
+            </picture>
+            <div class="gallery-content">
+                <div class="gallery-title">
+                    <h2>Gallery</h2>
+                </div>
+                <div class="gallery-description">
+                    <p> This section is reserved for Bear results, alliance moments, rankings, event wins, and the occasional bit of TsP chaos.</p>
+                </div>
+                <div class="gallery-wrapper">
+                    <button aria-label="Previous button" class="gallery-arrow gallery-arrow--left" aria-label="Scroll left">
+                        <i class="ph ph-arrow-left"></i>
+                    </button>
+                    <div role="group" tabindex="0" aria-label="Gallery of Images" aria-roledescription="carousel" class="gallery-container">
+                        <div class="gallery-images">
+                            <div class="gallery-image">
+                                <img src="assets/images/gallery/t1.webp" alt="Screenshot example of gallery images">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="assets/images/gallery/t2.webp" alt="Screenshot example of gallery images">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="assets/images/gallery/t3.webp" alt="Screenshot example of gallery images">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="assets/images/gallery/t1.webp" alt="Screenshot example of gallery images">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="assets/images/gallery/t2.webp" alt="Screenshot example of gallery images">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="assets/images/gallery/t3.webp" alt="Screenshot example of gallery images">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="assets/images/gallery/t1.webp" alt="Screenshot example of gallery images">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="assets/images/gallery/t2.webp" alt="Screenshot example of gallery images">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="assets/images/gallery/s1.webp" alt="Screenshot example of gallery images">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="assets/images/gallery/s2.webp" alt="Screenshot example of gallery images">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="assets/images/gallery/s3.webp" alt="Screenshot example of gallery images">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="assets/images/gallery/s4.webp" alt="Screenshot example of gallery images">
+                            </div>
+                        </div>
+                    </div>
+                    <button aria-label="Next button" class="gallery-arrow gallery-arrow--right" aria-label="Scroll right">
+                        <i class="ph ph-arrow-right"></i>
+                    </button>
+                </div>
+
+
+                <div class="custom-scrollbar-track">
+                    <div class="custom-scrollbar-thumb"></div>
+                  </div>
+            </div>
+        </section>
+
+        <section id="kingdom" class="kingdom">
+            <picture class="kingdom-bg">
+                <source media="(min-width: 1001px)" srcset="assets/images/kingdom/bg.webp">
+                <img src="assets/images/kingdom/bg.webp"
+                    alt="Image of an old paper map showing a fictional world.">
+            </picture>
+            <div class="kingdom-content">
+                <div class="kingdom-header">
+                    <div class="kingdom-eyebrow">KINGDOM #366</div>
+                    <div class="kingdom-title">
+                        <h2>Kingdom Information</h2>
+                    </div>
+                </div>
+                <div class="kingdom-description">
+                    <p>We are part of Kingdom 366. For a broader look at the kingdom, its structure, and general community information, visit the kingdom website.
+                        <br><br>
+                        The kingdom aims for a stable and welcoming environment with clear rules, coordination, and a strong event focus.</p>
+                </div>
+                <div class="kingdom-actions">
+                    <a href="https://bangchang366.vercel.app/" target="_blank" class="secondary-link">Visit Kingdom 366 Website</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="leadership" class="leadership">
+            <div class="leadership-content">
+                <div class="leadership-title">
+                    <h2>Leadership & Contact</h2>
+                </div>
+                <div class="leadership-list">
+                    <div class="leadership-box leader">
+                        <div class="leader-name">Parzival</div>
+                        <div class="leader-id">In-game ID: <br> <span id="IDA">61260899</span> <button aria-label="Copy player ID button" class="copy-btn" onclick="copyValue('IDA')"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32Zm-8,128H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg></button></div>
+                        <div class="leader-details">Reach out in game for recruitment or questions.</div>
+                    </div>
+                    <div class="leadership-box leader">
+                        <div class="leader-name">Xtar</div>
+                        <div class="leader-id">In-game ID: <br> <span id="IDB">59343491</span> <button aria-label="Copy player ID button" class="copy-btn" onclick="copyValue('IDB')"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32Zm-8,128H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg></button></div>
+                        <div class="leader-details">Also available in game for recruitment and alliance matters.</div>
+                    </div>
+                    <div class="leadership-box discord-box">
+                        <div class="discord-title"><i class="ph-fill ph-discord-logo"></i> Discord</div>
+                        <div class="discord-description">For direct contact outside the game, you can also reach us on Discord.</div>
+                        <div class="discord-box-actions">
+                            <a href="https://discord.com/users/594582415138095115" target="_blank" class="secondary-link">Open Discord</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="leadership-image">
+                    <img src="assets/mascot/puppy-heart.webp" alt="TsP puppy mascot wearing armor with a small heart floating.">
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="members" class="members">
+            <picture class="members-bg">
+                <source media="(min-width: 1001px)" srcset="assets/images/members/map.webp">
+                <img src="assets/images/members/map-mobile.webp"
+                    alt="Image of a map of the world showing pins where our members are from.">
+            </picture>
+        </section>
+
+        <section id="ready" class="ready">
+            <picture class="ready-bg">
+                <source media="(min-width: 1001px)" srcset="assets/images/ready/ready-bg-desktop.webp">
+                <img src="assets/images/ready/ready-bg-mobile.webp"
+                    alt="TsP puppy wearing armor standing in front of a massive castle ready to enter.">
+            </picture>
+            <div class="ready-content">
+                <div class="ready-title">
+                    <h2>Are You Ready?</h2>
+                </div>
+                <div class="ready-description">
+                    <p>Join our alliance today, and let’s conquer the entire world of Kingshot, together.</p>
+                </div>
+                <div class="ready-actions">
+                    <a class="cta-join-link" href="">
+                        <img class="main-cta" src="assets/main-cta.webp"
+                            alt="Call to action designed to look medieval with a sword, shield, and helmet on the sides. Centered with the word 'Join'.">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-title">TsP - The Small Puppies</div>
+                <div class="footer-description">Kingshot alliance website for TsP — The Small Puppies, made with love and care.</div>
+            </div>
+            <div class="footer-right">
+                Friendly. Active. Slightly unhinged.
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="audio-controls">
+        <canvas aria-label="2D puppy" id="pc"></canvas>
+        
+        <div class="audio-control-button">
+            <button id="playButton">
+                <svg aria-label="Play Button Icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm36.44-94.66-48-32A8,8,0,0,0,104,96v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,145.05V111l25.58,17Z"></path></svg>
+                Play Music
+            </button>
+            <button id="pauseButton" style="display:none">
+                <svg aria-label="Pause Button Icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM112,96v64a8,8,0,0,1-16,0V96a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V96a8,8,0,0,1,16,0Z"></path></svg>
+                </button>
+        </div>
+
+        <div id="loadSongWrapper" class="load-song-wrapper">
+            <div id="bufferIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M140,32V64a12,12,0,0,1-24,0V32a12,12,0,0,1,24,0Zm33.25,62.75a12,12,0,0,0,8.49-3.52L204.37,68.6a12,12,0,0,0-17-17L164.77,74.26a12,12,0,0,0,8.48,20.49ZM224,116H192a12,12,0,0,0,0,24h32a12,12,0,0,0,0-24Zm-42.26,48.77a12,12,0,1,0-17,17l22.63,22.63a12,12,0,0,0,17-17ZM128,180a12,12,0,0,0-12,12v32a12,12,0,0,0,24,0V192A12,12,0,0,0,128,180ZM74.26,164.77,51.63,187.4a12,12,0,0,0,17,17l22.63-22.63a12,12,0,1,0-17-17ZM76,128a12,12,0,0,0-12-12H32a12,12,0,0,0,0,24H64A12,12,0,0,0,76,128ZM68.6,51.63a12,12,0,1,0-17,17L74.26,91.23a12,12,0,0,0,17-17Z"></path></svg>
+            </div>
+            <div class="buffer-text">Loading...</div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="puppy.js"></script>
+</body>
+
+</html>
