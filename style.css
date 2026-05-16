@@ -766,6 +766,8 @@ nav.active{
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     cursor:grab;
+    -webkit-user-select: none;
+    user-select: none;
   }
   
   .gallery-container:active {
@@ -782,7 +784,6 @@ nav.active{
     gap: 24px;
     padding: 0 48px 10px 50px;
     white-space: nowrap;
-    pointer-events: none;
   }
   
 
@@ -797,6 +798,8 @@ nav.active{
     flex: 0 0 auto;
     height: auto;
     pointer-events: none;
+    -webkit-user-select: none;
+    user-select: none;
   }
 
 .gallery-image img{
@@ -804,6 +807,9 @@ nav.active{
     width:300px;
     object-fit: cover;
     border: 5px solid #3D3031;
+    pointer-events: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 
