@@ -23,9 +23,8 @@
   imagesrcset="
   assets/images/hero/hero-bg-desktop.webp,
   assets/images/hero/hero-bg-mobile.webp,
-  assets/images/ready/ready-bg-desktop.webp,
-  assets/images/ready/ready-bg-mobile.webp,
-  assets/main-cta.webp
+  assets/main-cta.webp,
+  assets/logo.webp
   "
 >
 
@@ -71,10 +70,10 @@
                             <a href="#kingdom">Kingdom</a>
                         </div>
                         <div class="nav-link">
-                            <a href="#leadership">Contact</a>
+                            <a href="#members">Members</a>
                         </div>
                         <div class="nav-link">
-                            <a href="#members">Members</a>
+                            <a href="#leadership">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -111,10 +110,10 @@
                 <a href="#kingdom">Kingdom</a>
             </div>
             <div class="nav-link">
-                <a href="#leadership">Contact</a>
+                <a href="#members">Members</a>
             </div>
             <div class="nav-link">
-                <a href="#members">Members</a>
+                <a href="#leadership">Contact</a>
             </div>
             <div class="nav-mobile-puppy">
                 <img src="assets/mascot/puppy-sleeping.webp" alt="TsP puppy sleeping">
@@ -423,7 +422,7 @@
                     </button>
                     <div role="group" tabindex="0" aria-label="Gallery of Images" aria-roledescription="carousel" class="gallery-container">
                         <div class="gallery-images">
-                            <div class="gallery-image">
+                            <!-- <div class="gallery-image">
                                 <img src="assets/images/gallery/t1.webp" alt="Screenshot example of gallery images">
                             </div>
                             <div class="gallery-image">
@@ -446,6 +445,12 @@
                             </div>
                             <div class="gallery-image">
                                 <img src="assets/images/gallery/t2.webp" alt="Screenshot example of gallery images">
+                            </div> -->
+                            <div class="gallery-image">
+                                <img src="assets/images/gallery/parz_mascot.webp" alt="Image of a swedish puppy with an amazing moustache in a snowy mountain holding the snowboard.">
+                            </div>
+                            <div class="gallery-image">
+                                <img src="assets/images/gallery/cc_mascot.webp" alt="Image of a lovely puppy with a cute red bow fishing and holding a can of redbull.">
                             </div>
                             <div class="gallery-image">
                                 <img src="assets/images/gallery/s1.webp" alt="Screenshot example of gallery images">
@@ -458,9 +463,6 @@
                             </div>
                             <div class="gallery-image">
                                 <img src="assets/images/gallery/s4.webp" alt="Screenshot example of gallery images">
-                            </div>
-                            <div class="gallery-image">
-                                <img src="assets/images/gallery/cc_mascot.webp" alt="Image of a lovely bulldog poppy with a cute red bow fishing and holding a can of redbull.">
                             </div>
                         </div>
                     </div>
@@ -500,20 +502,27 @@
             </div>
         </section>
 
+        <section id="members" class="members">
+            <picture class="members-bg">
+                <source media="(min-width: 1001px)" srcset="assets/images/members/map.webp">
+                <img src="assets/images/members/map-mobile.webp"
+                    alt="Image of a map of the world showing pins where our members are from.">
+            </picture>
+        </section>
 
         <section id="leadership" class="leadership">
             <div class="leadership-content">
                 <div class="leadership-title">
-                    <h2>Leadership & Contact</h2>
+                    <h2>Contact & Join</h2>
                 </div>
                 <div class="leadership-list">
                     <div class="leadership-box leader">
-                        <div class="leader-name">Parzival</div>
+                        <div class="leader-name">Parzival <br> <span class="leader-badge"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M248,80a28,28,0,1,0-51.12,15.77l-26.79,33L146,73.4a28,28,0,1,0-36.06,0L85.91,128.74l-26.79-33a28,28,0,1,0-26.6,12L47,194.63A16,16,0,0,0,62.78,208H193.22A16,16,0,0,0,209,194.63l14.47-86.85A28,28,0,0,0,248,80ZM128,40a12,12,0,1,1-12,12A12,12,0,0,1,128,40ZM24,80A12,12,0,1,1,36,92,12,12,0,0,1,24,80ZM220,92a12,12,0,1,1,12-12A12,12,0,0,1,220,92Z"></path></svg> Leader</span></div>
                         <div class="leader-id">In-game ID: <br> <span id="IDA">61260899</span> <button aria-label="Copy player ID button" class="copy-btn" onclick="copyValue('IDA')"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32Zm-8,128H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg></button></div>
                         <div class="leader-details">Reach out in game for recruitment or questions.</div>
                     </div>
                     <div class="leadership-box leader">
-                        <div class="leader-name">Xtar</div>
+                        <div class="leader-name">Xtar <br> <span class="leader-badge"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 256 256"><path d="M216,32H152a8,8,0,0,0-6.34,3.12l-64,83.21L72,108.69a16,16,0,0,0-22.64,0l-8.69,8.7a16,16,0,0,0,0,22.63l22,22-32,32a16,16,0,0,0,0,22.63l8.69,8.68a16,16,0,0,0,22.62,0l32-32,22,22a16,16,0,0,0,22.64,0l8.69-8.7a16,16,0,0,0,0-22.63l-9.64-9.64,83.21-64A8,8,0,0,0,224,104V40A8,8,0,0,0,216,32Zm-8,68.06-81.74,62.88L115.32,152l50.34-50.34a8,8,0,0,0-11.32-11.31L104,140.68,93.07,129.74,155.94,48H208Z"></path></svg> General</span> </div>
                         <div class="leader-id">In-game ID: <br> <span id="IDB">59343491</span> <button aria-label="Copy player ID button" class="copy-btn" onclick="copyValue('IDB')"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32Zm-8,128H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg></button></div>
                         <div class="leader-details">Also available in game for recruitment and alliance matters.</div>
                     </div>
@@ -532,13 +541,7 @@
             
         </section>
 
-        <section id="members" class="members">
-            <picture class="members-bg">
-                <source media="(min-width: 1001px)" srcset="assets/images/members/map.webp">
-                <img src="assets/images/members/map-mobile.webp"
-                    alt="Image of a map of the world showing pins where our members are from.">
-            </picture>
-        </section>
+ 
 
         <section id="ready" class="ready">
             <picture class="ready-bg">

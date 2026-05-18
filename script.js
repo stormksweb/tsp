@@ -44,7 +44,7 @@ const monthData = [
     { name: "February", message: "Parzival" },
     { name: "March", message: "Illusionist" },
     { name: "April", message: "Dendennis & Mouna" },
-    { name: "May", message: "Cloud" },
+    { name: "May", message: "Cloud & Mali" },
     { name: "June", message: "Xtar" },
     { name: "July", message: "PT" },
     { name: "August", message: "Zobeeze" },
