@@ -188,9 +188,9 @@ header{
 nav{
     width:max-content;
     border-radius:10px;
-    background: #11010281;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: hsl(356, 89%, 4%);
+    /* backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); */
     margin:0 auto;
     display:grid;
     grid-template-columns: auto 1fr;
