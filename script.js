@@ -3,7 +3,6 @@ document.querySelectorAll('a.cta-join-link').forEach(el => {
 });
 
 
-
 window.addEventListener('resize', () => {
   hideMobileNav()
 });

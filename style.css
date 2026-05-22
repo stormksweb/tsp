@@ -47,8 +47,8 @@
 }
 
 ::-webkit-scrollbar {
-    width: 15px;  /* vertical scrollbar width */
-    height: 15px; /* horizontal scrollbar height */
+    width: 15px; 
+    height: 15px;
   }
   
   ::-webkit-scrollbar-track {
@@ -98,7 +98,6 @@ section picture{
 
 .secondary-link{
     color:var(--white);
-    /* background:var(--white); */
     padding:8px 16px;
     border:1px solid var(--white);
     border-radius: 200px;
@@ -123,8 +122,6 @@ section picture{
 header{
     position:sticky;
     z-index:20;
-    /* transform: translateX(-50%);
-    left:50%; */
     top:0px;
     width:100%;
     padding:20px 0 0 0;
@@ -171,7 +168,6 @@ nav .logo img{
 
 .nav-links{
     display:flex;
-    /* grid-template-columns: repeat(7, 1fr); */
     gap:32px;
 }
 .nav-link{
@@ -346,13 +342,6 @@ nav.active{
 .hero-vip{
     position:absolute;
     bottom:30px;
-    /* display:flex;
-    flex-wrap: nowrap; */
-    /* gap:var(--p-8); */
-    /* background: #B37A00;
-    background: -webkit-linear-gradient(-90deg,rgba(179, 122, 0, 1) 0%, rgba(230, 150, 0, 1) 100%);
-    background: -moz-linear-gradient(-90deg,rgba(179, 122, 0, 1) 0%, rgba(230, 150, 0, 1) 100%);
-    background: linear-gradient(-90deg,rgba(179, 122, 0, 1) 0%, rgba(230, 150, 0, 1) 100%); */
     background:rgb(255, 246, 230);
     color:var(--black);
     padding:12px 18px;
@@ -581,13 +570,11 @@ nav.active{
 
 .join-welcome-box{
     display:flex;
-    /* grid-template-columns: auto auto; */
     gap:24px;
     align-items: center;
 }
 .join-welcome-box-mascot{
-    /* width: 215px; */
-    /* max-width:215px; */
+
 }
 
 .join-welcome-box-mascot img{
@@ -819,9 +806,7 @@ nav.active{
   
 
   .gallery-image {
-    /* background: #3D3031; */
     border-radius: 20px;
-    /* padding: 20px; */
     display: grid;
     align-items: center;
     justify-content: center;
@@ -899,12 +884,6 @@ nav.active{
     transition: left 0.1s ease;
   }
   
-  /* @media (hover: none) and (pointer: coarse) {
-    .gallery-arrow {
-      display: none;
-    }
-  } */
-
 
 
 
@@ -912,20 +891,11 @@ nav.active{
 /* Members */
 .members{
     background:#020101;
-    /* padding:100px 0; */
     text-align: center;
-}
-.members-bg{
-    /* display:grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr; */
-    /* text-align: center; */
 }
 .members-bg img{
     max-width:3000px;
     object-fit: contain;
-    /* max-width:1200px; */
     width:100%;
 }
 
@@ -1027,9 +997,6 @@ nav.active{
 }
 
 .leader-name{
-    /* display:flex;
-    align-items: center;
-    gap:4px; */
 }
 
 .leader-id, .leader-details{
@@ -1292,23 +1259,18 @@ footer{
 
 
 @media (hover: hover) {
-    /* Hide scrollbar thumb by default on desktop */
     .gallery-images::-webkit-scrollbar-thumb {
       background-color: transparent;
     }
-    
-    /* Show custom thumb on hover */
+
     .gallery-images:hover::-webkit-scrollbar-thumb {
       background-color: rgba(0, 0, 0, 0.4);
     }
   }
-  
-  /* 4. Mobile Always Visible Behavior */
-  /* On touch devices, scrollbars often hide by default; 
-     we force a consistent look for better visibility */
+
   @media (hover: none) {
     .gallery-images::-webkit-scrollbar-thumb {
-      background-color: rgba(0, 0, 0, 0.5); /* Always visible thumb color */
+      background-color: rgba(0, 0, 0, 0.5); 
     }
   }
 
@@ -1396,8 +1358,6 @@ footer{
 
 @media (max-width: 950px){
     header{
-        /* position:sticky;
-        top:0; */
     }
     nav{
         width:80%;
