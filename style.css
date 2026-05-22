@@ -1,4 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Press+Start+2P&display=swap');
+/* Girassol */
+@font-face {
+    font-display: swap;
+    font-family: 'Girassol';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/girassol-v24-latin-regular.woff2') format('woff2'); 
+  }
+
+
+/* Inter */
+@font-face {
+    font-display: swap; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    src: url('assets/fonts/inter-v20-latin-200.woff2') format('woff2'); 
+  }
+  
+  @font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/inter-v20-latin-regular.woff2') format('woff2'); 
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('assets/fonts/inter-v20-latin-600.woff2') format('woff2'); 
+  }
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    src: url('assets/fonts/inter-v20-latin-800.woff2') format('woff2'); 
+  }
+
+  /* Press Start 2P */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/press-start-2p-v16-latin-regular.woff2') format('woff2'); 
+  }
+
+
+
+
+
+
+
+
 *{
     box-sizing: border-box;
     margin:0;
@@ -6,7 +64,7 @@
     font-smoothing:antialiased;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: all 0.2s ease-in-out;
+    /* transition: all 0.2s ease-in-out; */
 
     scrollbar-width: auto;           
     scrollbar-color: var(--scrollbar-color) var(--scrollbar-bg);
@@ -955,6 +1013,17 @@ nav.active{
     margin:32px auto;
 }
 
+.kingdom-actions{
+    text-align: center;
+}
+
+.kingdom-actions a{
+    display: flex;
+    align-items: center;
+    gap:8px;
+    width:max-content;
+    margin:0 auto;
+}
 
 
 
@@ -1056,6 +1125,10 @@ nav.active{
     background:var(--dark);
     color:var(--light);
     border:1px solid var(--dark);
+    display: flex;
+    align-items: center;
+    gap:8px;
+    width:max-content;
 }
 
 .discord-box-actions .secondary-link:hover{
@@ -1255,6 +1328,60 @@ footer{
     }
 }
 
+
+
+
+
+
+
+/* 404 */
+.fof{
+    position: relative;
+    height:100vh;
+}
+
+.fof-bg img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    z-index:0;
+}
+
+
+.fof-content{
+    position: relative;
+    z-index:1;
+    width:90%;
+    text-align: center;
+    padding:60px 0 0 0;
+    margin:0 auto;
+    display:grid;
+    gap:16px;
+}
+
+
+.fof-eyebrow{
+    font-family: var(--font-play);
+    font-size:0.5rem;
+}
+
+.fof-title{
+    font-family: var(--font-heading);
+}
+
+.fof-description{
+    max-width:400px;
+    margin:0 auto;
+    padding:0 0 24px 0;
+}
+
+.fof-action .secondary-link{
+    background:var(--white);
+    color:var(--accent-dark);
+}
 
 
 

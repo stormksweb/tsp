@@ -138,8 +138,12 @@ const monthData = [
   window.addEventListener('resize', updateArrows);
 
   
-  updateThumb();
-  updateArrows();
+  window.addEventListener('load', () => {
+    requestAnimationFrame(() => {
+      updateThumb();
+      updateArrows();
+    });
+  });
 
 
 
@@ -217,6 +221,9 @@ const monthData = [
   
     momentumFrame = requestAnimationFrame(step);
   }
+
+
+
 
 
 let audioCtx;
