@@ -1,4 +1,5 @@
 (function(){
+  function launchPuppy(){
     const CFG = {
       PIXEL:       1,
       COLS:        56,
@@ -269,5 +270,14 @@
       playing = false;
       if(!playing) notes = [];
     });
+  }
+
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(launchPuppy);
+    return; 
+  }
+
+  launchPuppy();
+
   
-  })();
+})();

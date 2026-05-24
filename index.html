@@ -7,6 +7,10 @@
     <meta name="description" content="TsP Alliance - The Greatest Kingshot Alliance, welcome to 'The Small Puppies'." />
     <link rel="preload" href="assets/logo.webp" as="image" type="image/webp">
     <link rel="preload" href="assets/main-cta.webp" as="image" type="image/webp">
+    <link rel="preload" href="assets/images/hero/hero-bg-desktop.webp" as="image" type="image/webp">
+    <link rel="preload" href="assets/images/hero/hero-bg-mobile.webp" as="image" type="image/webp">
+    <link rel="preload" href="assets/fonts/inter-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/girassol-v24-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="shortcut icon" href="favicon.ico" />
@@ -14,8 +18,9 @@
     <meta name="apple-mobile-web-app-title" content="TsP" />
     <link rel="manifest" href="site.webmanifest" />
     <title>TsP Alliance</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="root.css">
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
 </head>
 
 <body>
@@ -25,7 +30,7 @@
         <picture class="hero-bg">
             <source media="(min-width: 1001px)" srcset="assets/images/hero/hero-bg-desktop.webp">
             <img src="assets/images/hero/hero-bg-mobile.webp"
-                alt="Image of the alliance mascot - a puppy wearing metal armor with red accents - standing proudly with a sword.">
+                alt="Image of the alliance mascot - a puppy wearing metal armor with red accents - standing proudly with a sword." fetchpriority="high">
         </picture>
 
     <header>
@@ -152,7 +157,7 @@
             <picture class="events-bg">
                 <source media="(min-width: 1001px)" srcset="assets/images/events/bg.webp">
                 <img src="assets/images/events/bg-mobile.webp"
-                    alt="Image of a wall that has the emblem of the alliance repeated on it.">
+                    alt="Image of a wall that has the emblem of the alliance repeated on it." loading="lazy">
             </picture>
             <div class="events-content">
                 <div class="events-title">
@@ -214,7 +219,7 @@
             <picture class="philosophy-bg">
                 <source media="(min-width: 1001px)" srcset="assets/images/philosophy/bg-desktop.webp">
                 <img src="assets/images/philosophy/bg-mobile.webp"
-                    alt="Image of the alliance mascot sitting on the desk with an open book, and putting their head on their first thinking.">
+                    alt="Image of the alliance mascot sitting on the desk with an open book, and putting their head on their first thinking." loading="lazy">
             </picture>
             <div class="philosophy-content">
                 <div class="philosophy-title">
@@ -239,18 +244,18 @@
         <section id="join" class="join">
             <img class="logo" src="assets/logo.webp" alt="Logo of TsP Alliance">
             <img class="frame frame-tl" src="assets/frame-tl.webp"
-                alt="Image of a corner of a wooden frame with flowers wrapped around it.">
+                alt="Image of a corner of a wooden frame with flowers wrapped around it." loading="lazy">
             <img class="frame frame-tr" src="assets/frame-tr.webp"
-                alt="Image of a corner of a wooden frame with flowers wrapped around it.">
+                alt="Image of a corner of a wooden frame with flowers wrapped around it." loading="lazy">
             <img class="frame frame-bl" src="assets/frame-bl.webp"
-                alt="Image of a corner of a wooden frame with flowers wrapped around it.">
+                alt="Image of a corner of a wooden frame with flowers wrapped around it." loading="lazy">
             <img class="frame frame-br" src="assets/frame-br.webp"
-                alt="Image of a corner of a wooden frame with flowers wrapped around it.">
+                alt="Image of a corner of a wooden frame with flowers wrapped around it." loading="lazy">
             <div class="join-content">
                 <div class="join-left">
                     <div class="join-welcome-box">
                         <div class="join-welcome-box-mascot">
-                            <img src="assets/mascot/puppy-stars.webp" alt="TsP Puppy happy expression with small stars">
+                            <img src="assets/mascot/puppy-stars.webp" alt="TsP Puppy happy expression with small stars" loading="lazy">
                         </div>
                         <div class="join-welcome-box-details">
                             <div class="join-welcome-box-details-title">
@@ -267,7 +272,7 @@
                     </div>
                     <div class="join-welcome-box">
                         <div class="join-welcome-box-mascot">
-                            <img src="assets/mascot/puppy-hand.webp" alt="TsP Puppy with hand gesturing to join">
+                            <img src="assets/mascot/puppy-hand.webp" alt="TsP Puppy with hand gesturing to join" loading="lazy">
                         </div>
                         <div class="join-welcome-box-details">
                             <div class="join-welcome-box-details-title">
@@ -332,7 +337,7 @@
             <picture class="recruitment-bg">
                 <source media="(min-width: 1001px)" srcset="assets/images/recruitment/bg-desktop.webp">
                 <img src="assets/images/recruitment/bg-mobile.webp"
-                    alt="Image of a castle view with hills and red banners representing the TsP emblem.">
+                    alt="Image of a castle view with hills and red banners representing the TsP emblem." loading="lazy">
             </picture>
             <div class="recruitment-content">
                 <div class="recruitment-title">
@@ -399,7 +404,7 @@
             <picture class="gallery-bg">
                 <source media="(min-width: 1001px)" srcset="assets/images/gallery/bg.webp">
                 <img src="assets/images/gallery/bg-mobile.webp"
-                    alt="Image of a maroon wall using the TsP emblem all over.">
+                    alt="Image of a maroon wall using the TsP emblem all over." loading="lazy">
             </picture>
             <div class="gallery-content">
                 <div class="gallery-title">
@@ -415,34 +420,34 @@
                     <div role="group" tabindex="0" aria-label="Gallery of Images" aria-roledescription="carousel" class="gallery-container">
                         <div id="gallery-images" class="gallery-images">
                             <div class="gallery-image">
-                                <img src="assets/images/gallery/p_mascot.webp" alt="Image of a lovely swedish puppy with an amazing moustache in a snowy mountain holding the snowboard.">
+                                <img src="assets/images/gallery/p_mascot.webp" alt="Image of a lovely swedish puppy with an amazing moustache in a snowy mountain holding the snowboard." loading="lazy">
                             </div>
                             <div class="gallery-image">
-                                <img src="assets/images/gallery/c_mascot.webp" alt="Image of a lovely puppy with a cute red bow fishing and holding a can of redbull.">
+                                <img src="assets/images/gallery/c_mascot.webp" alt="Image of a lovely puppy with a cute red bow fishing and holding a can of redbull." loading="lazy">
                             </div>
                             <div class="gallery-image">
-                                <img src="assets/images/gallery/i_mascot.webp" alt="Image of a lovely puppy playing the guitar.">
+                                <img src="assets/images/gallery/i_mascot.webp" alt="Image of a lovely puppy playing the guitar." loading="lazy">
                             </div>
                             <div class="gallery-image">
-                                <img src="assets/images/gallery/d_mascot.webp" alt="Image of a lovely puppy relaxing and crocheting.">
+                                <img src="assets/images/gallery/d_mascot.webp" alt="Image of a lovely puppy relaxing and crocheting." loading="lazy">
                             </div>
                             <div class="gallery-image">
-                                <img src="assets/images/gallery/m_mascot.webp" alt="Image of a lovely puppy listening to music and having a picnic.">
+                                <img src="assets/images/gallery/m_mascot.webp" alt="Image of a lovely puppy listening to music and having a picnic." loading="lazy">
                             </div>
                             <div class="gallery-image">
-                                <img src="assets/images/gallery/x_mascot.webp" alt="Image of a lovely puppy, with a galaxy and aurora in the background, and small puppy made of nanoblocks.">
+                                <img src="assets/images/gallery/x_mascot.webp" alt="Image of a lovely puppy, with a galaxy and aurora in the background, and small puppy made of nanoblocks." loading="lazy">
                             </div>
                             <div class="gallery-image">
-                                <img src="assets/images/gallery/s1.webp" alt="Screenshot example of gallery images">
+                                <img src="assets/images/gallery/s1.webp" alt="Screenshot example of gallery images" loading="lazy">
                             </div>
                             <div class="gallery-image">
-                                <img src="assets/images/gallery/s2.webp" alt="Screenshot example of gallery images">
+                                <img src="assets/images/gallery/s2.webp" alt="Screenshot example of gallery images" loading="lazy">
                             </div>
                             <div class="gallery-image">
-                                <img src="assets/images/gallery/s3.webp" alt="Screenshot example of gallery images">
+                                <img src="assets/images/gallery/s3.webp" alt="Screenshot example of gallery images" loading="lazy">
                             </div>
                             <div class="gallery-image">
-                                <img src="assets/images/gallery/s4.webp" alt="Screenshot example of gallery images">
+                                <img src="assets/images/gallery/s4.webp" alt="Screenshot example of gallery images" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -462,7 +467,7 @@
             <picture class="kingdom-bg">
                 <source media="(min-width: 1001px)" srcset="assets/images/kingdom/bg.webp">
                 <img src="assets/images/kingdom/bg.webp"
-                    alt="Image of an old paper map showing a fictional world.">
+                    alt="Image of an old paper map showing a fictional world." loading="lazy">
             </picture>
             <div class="kingdom-content">
                 <div class="kingdom-header">
@@ -488,7 +493,7 @@
             <picture class="members-bg">
                 <source media="(min-width: 1001px)" srcset="assets/images/members/map.webp">
                 <img src="assets/images/members/map-mobile.webp"
-                    alt="Image of a map of the world showing pins where our members are from.">
+                    alt="Image of a map of the world showing pins where our members are from." loading="lazy">
             </picture>
         </section>
 
@@ -521,7 +526,7 @@
                     </div>
                 </div>
                 <div class="leadership-image">
-                    <img src="assets/mascot/puppy-heart.webp" alt="TsP puppy mascot wearing armor with a small heart floating.">
+                    <img src="assets/mascot/puppy-heart.webp" alt="TsP puppy mascot wearing armor with a small heart floating." loading="lazy">
                 </div>
             </div>
             
@@ -533,7 +538,7 @@
             <picture class="ready-bg">
                 <source media="(min-width: 1001px)" srcset="assets/images/ready/ready-bg-desktop.webp">
                 <img src="assets/images/ready/ready-bg-mobile.webp"
-                    alt="TsP puppy wearing armor standing in front of a massive castle ready to enter.">
+                    alt="TsP puppy wearing armor standing in front of a massive castle ready to enter." loading="lazy">
             </picture>
             <div class="ready-content">
                 <div class="ready-title">
@@ -588,8 +593,8 @@
 
     </div>
 
-    <script src="script.js"></script>
-    <script src="puppy.js"></script>
+    <script src="script.js" defer></script>
+    <script src="puppy.js" defer></script>
 </body>
 
 </html>
