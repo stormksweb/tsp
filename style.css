@@ -884,7 +884,7 @@ nav.active{
     pointer-events: none;
     -webkit-user-select: none;
     user-select: none;
-    aspect-ratio: 3 / 5;
+    aspect-ratio: 3 / 4;
     background:#5c4e4f;
 }
 
@@ -1482,6 +1482,12 @@ footer{
     .leadership-list{
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .gallery-image img{
+        height:400px;
+        aspect-ratio: 3 / 4;
+    }
+    
 
 }
 
