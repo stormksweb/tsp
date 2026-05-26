@@ -918,7 +918,7 @@ nav.active{
   }
   
   .gallery-arrow:disabled {
-    opacity: 0.2;
+    opacity: 0;
     cursor: default;
     pointer-events: none;
   }
